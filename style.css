@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-size: 15px;
+  font-family: "League Spartan";
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100vh;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+}
+
+.bottom {
+  bottom: 0;
+  right: 0;
+}
+
+.lg {
+  display: none;
+}
+
+main {
+  padding: 2.5rem 1rem;
+}
+
+.title {
+  color: var(--very-dark-magenta);
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+.description {
+  color: var(--dark-grayish-magenta);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.rating-wrapper {
+  background-color: var(--light-grayish-magenta);
+  border-radius: 10px;
+  padding: 15px 0;
+  margin: 15px 0;
+}
+
+.star {
+  text-align: center;
+}
+
+.rating-wrapper > p {
+  text-align: center;
+  margin-bottom: 0;
+  font-weight: 600;
+  color: var(--very-dark-magenta);
+}
+
+.review-wrapper {
+  background-color: var(--very-dark-magenta);
+  color: white;
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile {
+  height: 50px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.name,
+.designation {
+  margin: 0;
+}
+
+.name {
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.designation {
+  color: var(--soft-pink);
+}
+
+@media (min-width: 1000px) {
+  main {
+    padding: 5rem 8rem;
+  }
+
+  .lg {
+    display: block;
+  }
+
+  .lg.top {
+    width: 40%;
+  }
+
+  .lg.bottom {
+    width: 70%;
+  }
+
+  .sm {
+    display: none;
+  }
+
+  .upper-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .intro {
+    width: 40%;
+  }
+
+  .title {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .description {
+    text-align: left;
+  }
+
+  .rating-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .rating-wrapper:nth-child(1) {
+    transform: translateX(-77px);
+  }
+
+  .rating-wrapper:nth-child(2) {
+    transform: translateX(-41px);
+  }
+
+  .rating-wrapper > p {
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  .review-section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .review-wrapper {
+    width: 25%;
+  }
+
+  .review-wrapper:nth-child(2) {
+    transform: translateY(20px);
+  }
+
+  .review-wrapper:nth-child(3) {
+    transform: translateY(40px);
+  }
+}
